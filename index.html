@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light The Castle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="images/logo-pb.png" onclick="logoChange('images/logo-cl.png')" class="logo"></a>
+            <ul>
+                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Ascend in the darkness<br>Light the <span>Castle</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime numquam corporis laboriosam, sit accusantium quia illum dolorem ullam. Saepe beatae iure ipsum itaque voluptates autem voluptate eos, ut exercitationem suscipit?</p>
+                <a href=#>Learn More</a>
+            </div>
+            <div class='imgBox'>
+                <img src="images/slime.png" class="slime">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li> <img src="images/slime-ev-th.png" onclick="imgSlider('images/slime.png')"></li>
+            <li> <img src="images/weapon-1-th.png" onclick="imgSlider('images/Armor_enemy-th.png')"></li>
+            <li> <img src="images/weapon-2-th.png" onclick="imgSlider('images/Armor_enemy-ds-th.png')"></li>
+        </ul>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.slime').src = anything;
+            }
+            function logoChange(anything){
+                document.querySelector('.logo').src = anything;
+            }
+        </script>
+    </section>
+</body>
+</html>
