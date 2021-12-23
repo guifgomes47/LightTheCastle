@@ -187,7 +187,7 @@ header ul li:hover{
     }
     .thumb li img{
         transform: scale(1.3);
-        max-width: 20px;
+        max-width: 10px;
         
     }
 }
